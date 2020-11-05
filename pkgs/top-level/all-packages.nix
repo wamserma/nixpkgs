@@ -2713,6 +2713,8 @@ in
   birdfont = callPackage ../tools/misc/birdfont { };
   xmlbird = callPackage ../tools/misc/birdfont/xmlbird.nix { stdenv = gccStdenv; };
 
+  blanket = callPackage ../applications/misc/blanket { };
+
   blastem = callPackage ../misc/emulators/blastem {
     inherit (python27Packages) pillow;
   };
